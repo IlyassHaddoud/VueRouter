@@ -13,12 +13,13 @@ export default {
   name: "ChampsView",
   data() {
     return {
-      champs: [
-        { id: 1, name: "Zed", role: "midLane" },
-        { id: 2, name: "Lucian", role: "botLane" },
-        { id: 3, name: "Fiora", role: "TopLane" },
-      ],
+      champs: [],
     };
+  },
+  mounted() {
+    fetch("http://localhost:3000/champs")
+      .then((res) => res.json())
+      .then((data) => (this.champs = data));
   },
 };
 </script>

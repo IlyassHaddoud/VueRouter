@@ -1,0 +1,7 @@
+{
+  "champs": [
+    { "id": 1, "name": "Zed", "role": "midLane" },
+    { "id": 2, "name": "Lucian", "role": "botLane" },
+    { "id": 3, "name": "Fiora", "role": "TopLane" }
+  ]
+}
